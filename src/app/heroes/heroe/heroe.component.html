@@ -1,0 +1,23 @@
+
+<h1> {{ nombre }} </h1>
+
+<dl class="col-3">
+  <td>Nombre: </td>
+  <dd> {{ nombre }} </dd>
+  
+  <td>Edad: </td>
+  <dd> {{ edad }} </dd>
+
+  <td>Función: </td>
+  <dd> {{ obtenerNombre() }} </dd>
+
+  <td>Capitalizado: </td>
+  <dd> {{ nombreCapitalizado }} </dd>
+</dl>
+
+<button class="btn btn-outline-success btn-lg m-2" (click) = "cambiarNombre()">
+  Cambiar Héroe
+</button>
+<button class="btn btn-outline-primary btn-lg m-2" (click) = cambiarEdad()>
+  Cambiar Edad
+</button>
